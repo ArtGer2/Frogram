@@ -1,4 +1,5 @@
 
+
 #include <iostream>
 
 using namespace std;
@@ -130,55 +131,55 @@ int compare(List l1, List l2) {
 }
 void main() {
 	setlocale(LC_ALL, "Russian");
-	cout << "Ëàáîðàòîðíàÿ ðàáîòà 1" << endl << "Âûïîëíèë Ãåðàñèìîâ Àðòåìèé ãð. 1301" << endl;
+	cout << "Ð›Ð°Ð±Ð¾Ñ€Ð°Ñ‚Ð¾Ñ€Ð½Ð°Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ð° 1" << endl << "Ð’Ñ‹Ð¿Ð¾Ð»Ð½Ð¸Ð» Ð“ÐµÑ€Ð°ÑÐ¸Ð¼Ð¾Ð² ÐÑ€Ñ‚ÐµÐ¼Ð¸Ð¹ Ð³Ñ€. 1301" << endl;
 	List l2;
 	List l1;
 
-	cout << "Âñòàâêà ÷èñëà â êîíåö ñïèñêà" << endl;
+	cout << "Ð’ÑÑ‚Ð°Ð²ÐºÐ° Ñ‡Ð¸ÑÐ»Ð° Ð² ÐºÐ¾Ð½ÐµÑ† ÑÐ¿Ð¸ÑÐºÐ°" << endl;
 	l1.push_back(12);
 	for (int i = 0; i < l1.get_size(); i++) {
 		cout << l1.get_index(i) << " | ";
 	}
 	cout << endl;
-	cout << "Âñòàâêà ÷èñëà â íà÷àëî ñïèñêà" << endl;
+	cout << "Ð’ÑÑ‚Ð°Ð²ÐºÐ° Ñ‡Ð¸ÑÐ»Ð° Ð² Ð½Ð°Ñ‡Ð°Ð»Ð¾ ÑÐ¿Ð¸ÑÐºÐ°" << endl;
 	l1.push_front(13);
 	for (int i = 0; i < l1.get_size(); i++) {
 		cout << l1.get_index(i) << " | ";
 	}
 	cout << endl;
-	cout << "Âñòàâêà ÷èñëà â ñåðåäèíó ñïèñêà (èíäåêñ 1)" << endl;
+	cout << "Ð’ÑÑ‚Ð°Ð²ÐºÐ° Ñ‡Ð¸ÑÐ»Ð° Ð² ÑÐµÑ€ÐµÐ´Ð¸Ð½Ñƒ ÑÐ¿Ð¸ÑÐºÐ° (Ð¸Ð½Ð´ÐµÐºÑ 1)" << endl;
 	l1.push_mid(13, 1);
 	for (int i = 0; i < l1.get_size(); i++) {
 		cout << l1.get_index(i) << " | ";
 	}
 	cout << endl;
-	cout << "Ïîëó÷åíèå ÷èñëà ïî èíäåêñó 1" << endl;
+	cout << "ÐŸÐ¾Ð»ÑƒÑ‡ÐµÐ½Ð¸Ðµ Ñ‡Ð¸ÑÐ»Ð° Ð¿Ð¾ Ð¸Ð½Ð´ÐµÐºÑÑƒ 1" << endl;
 	cout <<l1.get_index(1) << endl;
-	cout << "Ðàçìåð ñïèñêà" << endl;
+	cout << "Ð Ð°Ð·Ð¼ÐµÑ€ ÑÐ¿Ð¸ÑÐºÐ°" << endl;
 	cout << l1.get_size() << endl;
-	cout << "Ñïèñîê äîïîëíåí 10 ÷èñëàìè" << endl;
+	cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð´Ð¾Ð¿Ð¾Ð»Ð½ÐµÐ½ 10 Ñ‡Ð¸ÑÐ»Ð°Ð¼Ð¸" << endl;
 	for (int i = 0; i < 10; i++) {
 		l1.push_back(i);
 	}
-	cout << "Óäàëåíèå ÷èñëà ñ èíäåêñîì 1" << endl;
+	cout << "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ñ‡Ð¸ÑÐ»Ð° Ñ Ð¸Ð½Ð´ÐµÐºÑÐ¾Ð¼ 1" << endl;
 	l1.del_mid(1);
 	for (int i = 0; i < l1.get_size(); i++) {
 		cout << l1.get_index(i) << " | ";
 	}
 	cout << endl;
-	cout << "Óäàëåíèå ÷èñëà èç êîíöà ñïèñêà" << endl;
+	cout << "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ñ‡Ð¸ÑÐ»Ð° Ð¸Ð· ÐºÐ¾Ð½Ñ†Ð° ÑÐ¿Ð¸ÑÐºÐ°" << endl;
 	l1.del_back();
 	for (int i = 0; i < l1.get_size(); i++) {
 		cout << l1.get_index(i) << " | ";
 	}
 	cout << endl;
-	cout << "Óäàëåíèå ÷èñëà èç íà÷àëà ñïèñêà" << endl;
+	cout << "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ñ‡Ð¸ÑÐ»Ð° Ð¸Ð· Ð½Ð°Ñ‡Ð°Ð»Ð° ÑÐ¿Ð¸ÑÐºÐ°" << endl;
 	l1.del_front();
 	for (int i = 0; i < l1.get_size(); i++) {
 		cout << l1.get_index(i) << " | ";
 	}
 	cout << endl;
-	cout << "Çàìåíà ÷èñëà ñ èíäåêñîì 1 íà 555" << endl;
+	cout << "Ð—Ð°Ð¼ÐµÐ½Ð° Ñ‡Ð¸ÑÐ»Ð° Ñ Ð¸Ð½Ð´ÐµÐºÑÐ¾Ð¼ 1 Ð½Ð° 555" << endl;
 	l1.replace(555,1);
 	for (int i = 0; i < l1.get_size(); i++) {
 		cout << l1.get_index(i) << " | ";
@@ -186,7 +187,7 @@ void main() {
 	cout << endl;
 	l2.push_back(4);
 	l2.push_back(5);
-	cout << "Ïîèñê ïåðâîãî âõîæäåíèÿ ñïèñêà l1 c l2 ( 4 | 5 )" << endl;
+	cout << "ÐŸÐ¾Ð¸ÑÐº Ð¿ÐµÑ€Ð²Ð¾Ð³Ð¾ Ð²Ñ…Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ ÑÐ¿Ð¸ÑÐºÐ° l1 c l2 ( 4 | 5 )" << endl;
 	cout << compare(l1, l2) << endl;
 	l1.clear();
 	l2.clear();
