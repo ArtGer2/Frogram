@@ -39,9 +39,6 @@ List::List() {
 	size = 0;
 	head = nullptr;
 }
-List::~List() {
-
-}
 void List::push_back(int data) {
 	if (head == nullptr) {
 		head = new Node(data);
