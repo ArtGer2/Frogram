@@ -6,7 +6,6 @@ using namespace std;
 class List {
 public:
 	List();
-	~List();
 	void push_front(int data);
 	void push_back(int data);
 	void push_mid(int data,int index);
