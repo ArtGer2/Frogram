@@ -1,7 +1,4 @@
 #pragma once
-//
-// Created by delme on 08.11.2022.
-//
 
 #ifndef ALGOS_LAB_4_MYBINARYTREE_H
 #define ALGOS_LAB_4_MYBINARYTREE_H
@@ -403,4 +400,4 @@ private:
 };
 
 
-#endif //ALGOS_LAB_4_MYBINARYTREE_H
+#endif
